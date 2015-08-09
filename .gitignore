@@ -9,6 +9,7 @@ install_manifest.txt
 .DS_Store
 
 #WIN32 ignores
+*.exe
 *.vcxproj.filters
 *.vcxproj.user
 *.suo
