@@ -9,9 +9,9 @@ install_manifest.txt
 .DS_Store
 
 #WIN32 ignores
-.vcxproj.filters
-.vcxproj.user
-.suo
+*.vcxproj.filters
+*.vcxproj.user
+*.suo
 *.ilk
 *.meta
 *.obj
