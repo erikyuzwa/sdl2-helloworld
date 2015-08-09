@@ -50,8 +50,8 @@ will work. Please reach me at @eyuzwa on the Twitters to voice your support.`
 
 ## Acknowledgements and Thanks
 * the entire SDL2 community that tirelessly works on preserving / extending SDL2
-* the LazyFoo tutorials and GB Games -- I'm convinced that they are one and the same, since
-  LazyFoo and GB haven't been seen together.
+* the LazyFoo tutorials for some of the SDL2 sticking points
+* GB Games for his great SDL2 / developer focused content
 * Sir Dupre for sacrificing himself and allowing his ashes to be fused with the Chaos Serpent.
 
 ## License
