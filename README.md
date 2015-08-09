@@ -35,6 +35,19 @@ ONCE.
 * open the `build\mac\helloworld.xcodeproj`
 * build and run from the IDE
 
+## Developers Guide
+Nothing fancy needed. Pretend I'm also waving my hands while mentioning `DRY principles`. Copy this entire
+project folder structure as your app. As long as your putting everything in a different top-level folder,
+then you'll never need to edit or modify the Visual Studio and XCode IDE project files. 
+`Thank the Maker, this oil bath is going to feel so good.`
+
+`As I find time and / or hear of interest, I may create small sample projects to demonstrate how this template
+will work. Please reach me at @eyuzwa on the Twitters to voice your support.`
+
+* Create your awesome class definitions in the source/app folder
+* At the very least, extend the `AppCore` object
+* Provide overrides for the `AppCore::startupApp()`, `AppCore::updateApp()` and `AppCore::shutdownApp()` functions
+
 ## Acknowledgements and Thanks
 * the entire SDL2 community that tirelessly works on preserving / extending SDL2
 * the LazyFoo tutorials and GB Games -- I'm convinced that they are one and the same, since
