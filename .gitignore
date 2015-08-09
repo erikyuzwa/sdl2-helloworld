@@ -1,5 +1,28 @@
+#CMake ignores
 CMakeCache.txt
 CMakeFiles
 Makefile
 cmake_install.cmake
 install_manifest.txt
+
+#OSX ignores
+.DS_Store
+
+#WIN32 ignores
+.vcxproj.filters
+.vcxproj.user
+.suo
+*.ilk
+*.meta
+*.obj
+*.pch
+*.log
+*.vspscc
+*.vssscc
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.cachefile
+
