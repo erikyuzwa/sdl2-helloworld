@@ -27,5 +27,5 @@ CLEANUP_AND_EXIT:
         delete appCore;
     }
 
-	return 0;
+	return returnVal;
 }
