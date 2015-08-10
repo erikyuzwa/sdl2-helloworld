@@ -54,6 +54,7 @@ INCLUDE_DIRECTORIES(${SDL_INCLUDE_DIR})
 
 ADD_SUBDIRECTORY (source)
 ADD_SUBDIRECTORY (assets)
+ADD_SUBDIRECTORY (res)
 
 FILE (GLOB MY_PROJECT_RESOURCES assets/images/*.png)
 FILE (GLOB MY_PROJECT_MUSIC_RESOURCES assets/sounds/*.ogg assets/sounds/*.wav)
@@ -61,7 +62,6 @@ FILE (GLOB MY_PROJECT_FONT_RESOURCES assets/fonts/*.ttf assets/fonts/*.TXT)
 INSTALL (FILES ${MY_PROJECT_RESOURCES} DESTINATION assets/images)
 INSTALL (FILES ${MY_PROJECT_MUSIC_RESOURCES} DESTINATION assets/sounds)
 INSTALL (FILES ${MY_PROJECT_FONT_RESOURCES} DESTINATION assets/fonts)
-INSTALL (FILES ${README_FILE_NAME} DESTINATION .)
 
 
 SET(CPACK_PACKAGE_DESCRIPTION_SUMMARY "helloworld cross platform project using SDL2")
@@ -76,11 +76,11 @@ SET(CPACK_PACKAGE_FILE_NAME ${MY_PROJECT_NAME}-${CPACK_PACKAGE_VERSION_MAJOR}.${
 
 if(WIN32 AND NOT UNIX)
 	SET(CPACK_NSIS_DISPLAY_NAME "sdl2-helloworld")
-	SET(CPACK_NSIS_HELP_LINK "https://github.com/erikyuzwa/sdl2-helloworld")
-	SET(CPACK_NSIS_URL_INFO_ABOUT "https://github.com/erikyuzwa/sdl2-helloworld")
+	SET(CPACK_NSIS_HELP_LINK "http://help.your-domain.com")
+	SET(CPACK_NSIS_URL_INFO_ABOUT "info.your-domain.com")
 	SET(CPACK_NSIS_CONTACT "your-name@your-domain.com")
-	SET(CPACK_NSIS_MUI_ICON "${PROJECT_SOURCE_DIR}/resources/${MY_PROJECT_NAME}.ico")
-	SET(CPACK_NSIS_MUI_UNIICON "${PROJECT_SOURCE_DIR}/resources/${MY_PROJECT_NAME}Uninstall.ico")
+	SET(CPACK_NSIS_MUI_ICON "${PROJECT_SOURCE_DIR}/res/desktop-app.ico")
+	SET(CPACK_NSIS_MUI_UNIICON "${PROJECT_SOURCE_DIR}/res/uninstall.ico")
 	SET(CPACK_NSIS_MODIFY_PATH OFF)
 	#Until NSIS is configured correctly.
 	SET(CPACK_GENERATOR "ZIP") 
