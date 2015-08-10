@@ -26,4 +26,6 @@ ipch/
 *.opensdf
 *.sdf
 *.cachefile
+*.dll
+
 
