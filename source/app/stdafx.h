@@ -17,6 +17,9 @@
 #elif __APPLE__
   //MAC side of things!
 #include <SDL2/SDL.h>
+#include <SDL2_image/SDL_image.h>
+#include <SDL2_mixer/SDL_mixer.h>
+#include <SDL2_ttf/SDL_ttf.h>
 #include "TargetConditionals.h"
 #if TARGET_IPHONE_SIMULATOR
   //ios simulator
