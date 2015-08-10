@@ -80,7 +80,7 @@ namespace core {
 
 		Mix_Chunk* newSound = Mix_LoadWAV(filePath.c_str());
 		if(newSound == NULL){
-			printf("error initializing or loading sound %s\n", filePath);
+			printf("error initializing or loading sound %s\n", filePath.c_str());
 			return -1;
 		}
 
@@ -107,7 +107,7 @@ namespace core {
 
 		Mix_Music* newMusic = Mix_LoadMUS(filePath.c_str());
 		if(newMusic == NULL){
-			printf("error initializing or loading music %s\n", filePath);
+			printf("error initializing or loading music %s\n", filePath.c_str());
 			return -1;
 		}
 
