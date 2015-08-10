@@ -20,7 +20,7 @@ namespace core {
 		newFont = TTF_OpenFont(filePath.c_str(), fontSize);
 
 		if (newFont == NULL) {
-			printf("error initializing or loading font %s - error %s\n", filePath, TTF_GetError());
+			printf("error initializing or loading font %s - error %s\n", filePath.c_str(), TTF_GetError());
 			return -1;
 		}
 
