@@ -8,6 +8,8 @@
  */
 #include "AppCore.h"
 
+using namespace core;
+
 int main(int argc, char** argv){
     
     AppCore* appCore = new AppCore();
