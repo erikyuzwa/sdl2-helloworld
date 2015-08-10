@@ -17,7 +17,10 @@ install_manifest.txt
 *.meta
 *.obj
 *.pch
+*.pdb
+*.idb
 *.log
+*.tlog
 *.vspscc
 *.vssscc
 ipch/
@@ -27,5 +30,6 @@ ipch/
 *.sdf
 *.cachefile
 *.dll
+*.lastbuildstate
 
 
