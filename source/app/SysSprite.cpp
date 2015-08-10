@@ -4,30 +4,29 @@
 namespace core {
 
 	SysSprite::SysSprite() {
-
 		data = NULL;
-
 	}
 
 	SysSprite::~SysSprite() {
 
 		unloadImage();
 		
+		SDL_assert(data == NULL);	
 	}
 
 	int SysSprite::loadImage(string filePath, SDL_Renderer* renderer) {
 
-		//Load image at specified path
-		SDL_Surface* loadedSurface = IMG_Load( filePath.c_str() ); 
-		if ( loadedSurface == NULL ) { 
+		// attempt to load image data from given path into an SDL_Surface object
+		SDL_Surface* tempSurface = IMG_Load( filePath.c_str() ); 
+		if ( tempSurface == NULL ) { 
 			printf( "Unable to load image %s! SDL_image Error: %s\n", filePath.c_str(), IMG_GetError() );
 			return -1;
 		} else { 
-			//Create texture from surface pixels 
-			data = SDL_CreateTextureFromSurface( renderer, loadedSurface ); 
+			// translate our loaded data into a normalized format
+			data = SDL_CreateTextureFromSurface( renderer, tempSurface );
 
-			//Get rid of old loaded surface 
-			SDL_FreeSurface( loadedSurface );
+			// free our temporary image data 
+			SDL_FreeSurface( tempSurface );
 			
 			if ( data == NULL ) {
 		       printf( "Unable to create texture from %s! SDL Error: %s\n", filePath.c_str(), SDL_GetError() ); 

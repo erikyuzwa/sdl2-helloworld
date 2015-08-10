@@ -29,7 +29,8 @@ namespace core {
 		~SysSprite();
 
 		/** attempting to load the image data from the given filePath,
-		* using the SDL_Renderer to store our texture data
+		* using the SDL_Renderer to normalize and translate our surface data into
+		* texture data
 		*/
 		int loadImage(string filePath, SDL_Renderer* renderer);
 
