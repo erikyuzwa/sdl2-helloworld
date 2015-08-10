@@ -45,14 +45,20 @@ then you'll never need to edit or modify the Visual Studio and XCode IDE project
 will work. Please reach me at @eyuzwa on the Twitters to voice your support.`
 
 * Create your awesome class definitions in the source/app folder
-* At the very least, extend the `AppCore` object
-* Provide overrides for the `AppCore::startupApp()`, `AppCore::updateApp()` and `AppCore::shutdownApp()` functions
+* At the very least, extend the `core::AppCore` object
+* Provide overrides for the `core::AppCore::startupApp()`, `core::AppCore::updateApp()` and `core::AppCore::shutdownApp()` functions
 
 ## Acknowledgements and Thanks
 * the entire SDL2 community that tirelessly works on preserving / extending SDL2
 * the LazyFoo tutorials for some of the SDL2 sticking points
 * GB Games for his great SDL2 / developer focused content
 * Sir Dupre for sacrificing himself and allowing his ashes to be fused with the Chaos Serpent.
+
+## Version History
+* 0.3.1 updated with SysTimer object
+* 0.3.0 updated with SysAudio, SysFont, SysSprite objects
+* 0.2.0 added support for VS2010
+* 0.1.0 initial release
 
 ## License
 
