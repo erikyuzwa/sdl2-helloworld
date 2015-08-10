@@ -33,5 +33,12 @@
 #include <string>
 #include <vector>
 #include <list>
+#include <map>
 
-
+namespace core {
+  class AppCore;
+  class SysAudio;
+  class SysFont;
+  class SysSprite;
+  class SysTimer;
+}
