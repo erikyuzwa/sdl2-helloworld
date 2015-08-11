@@ -41,12 +41,12 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\SDL2-2.0.3\include;$(IncludePath);..\..\..\source\app</IncludePath>
+    <IncludePath>C:\SDL2-2.0.3\include;$(IncludePath);..\..\..\source\core</IncludePath>
     <LibraryPath>C:\SDL2-2.0.3\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\SDL2-2.0.3\include;$(IncludePath);..\..\..\source\app</IncludePath>
+    <IncludePath>C:\SDL2-2.0.3\include;$(IncludePath);..\..\..\source\core</IncludePath>
     <LibraryPath>C:\SDL2-2.0.3\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -91,20 +91,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\source\app\AppCore.h" />
-    <ClInclude Include="..\..\..\source\app\stdafx.h" />
-    <ClInclude Include="..\..\..\source\app\SysAudio.h" />
-    <ClInclude Include="..\..\..\source\app\SysFont.h" />
-    <ClInclude Include="..\..\..\source\app\SysSprite.h" />
-    <ClInclude Include="..\..\..\source\app\SysTimer.h" />
+    <ClInclude Include="..\..\..\source\core\SysCore.h" />
+    <ClInclude Include="..\..\..\source\core\SysHeaders.h" />
+    <ClInclude Include="..\..\..\source\core\SysAudio.h" />
+    <ClInclude Include="..\..\..\source\core\SysFont.h" />
+    <ClInclude Include="..\..\..\source\core\SysSprite.h" />
+    <ClInclude Include="..\..\..\source\core\SysTimer.h" />
     <ClInclude Include="..\..\..\source\MyApplication.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\source\app\AppCore.cpp" />
-    <ClCompile Include="..\..\..\source\app\SysAudio.cpp" />
-    <ClCompile Include="..\..\..\source\app\SysFont.cpp" />
-    <ClCompile Include="..\..\..\source\app\SysSprite.cpp" />
-    <ClCompile Include="..\..\..\source\app\SysTimer.cpp" />
+    <ClCompile Include="..\..\..\source\core\SysCore.cpp" />
+    <ClCompile Include="..\..\..\source\core\SysAudio.cpp" />
+    <ClCompile Include="..\..\..\source\core\SysFont.cpp" />
+    <ClCompile Include="..\..\..\source\core\SysSprite.cpp" />
+    <ClCompile Include="..\..\..\source\core\SysTimer.cpp" />
     <ClCompile Include="..\..\..\source\main.cpp" />
     <ClCompile Include="..\..\..\source\MyApplication.cpp" />
   </ItemGroup>

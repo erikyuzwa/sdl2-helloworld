@@ -1,18 +1,18 @@
-ADD_SUBDIRECTORY (app)
+ADD_SUBDIRECTORY (core)
 
-# TODO allow tests to run on both Mac and Win platforms
+# TODO allow tests to run on both Mac (aka. Darwin) and Win platforms
 IF(NOT WIN32)
 	ADD_SUBDIRECTORY (tests)
 ENDIF(NOT WIN32)
 
 IF(WIN32)
-SET(OTHER_RESOURCE_FILES ${PROJECT_SOURCE_DIR}/resources/WindowsIconResource.rc)
+SET(OTHER_RESOURCE_FILES ${PROJECT_SOURCE_DIR}/res/WindowsIconResource.rc)
 SET(CMAKE_RC_COMPILER_INIT windres)
 ENABLE_LANGUAGE(RC)
 SET(CMAKE_RC_COMPILE_OBJECT "<CMAKE_RC_COMPILER> <FLAGS> -O coff <DEFINES> -i <SOURCE> -o <OBJECT>")
 ENDIF(WIN32)
 
-INCLUDE_DIRECTORIES (${PROJECT_SOURCE_DIR}/source/app ${PROJECT_BINARY_DIR}/source/app)
+INCLUDE_DIRECTORIES (${PROJECT_SOURCE_DIR}/source/core ${PROJECT_BINARY_DIR}/source/core)
 
 ADD_EXECUTABLE (${MY_PROJECT_NAME}-bin main ${OTHER_RESOURCE_FILES})
 
