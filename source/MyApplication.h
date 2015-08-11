@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include "AppCore.h"
+#include "SysCore.h"
 
 using namespace core;
 
@@ -10,7 +10,7 @@ using namespace core;
 * all the lower level SDL2 lifting in the base core::AppCore object. You need to just implement the virtual functions 
 * declared here.
 */
-class MyApplication : public AppCore {
+class MyApplication : public SysCore {
 
 public:
 	/**

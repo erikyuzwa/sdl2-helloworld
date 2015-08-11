@@ -39,9 +39,10 @@
 #include <map>
 
 namespace core {
-  class AppCore;
+  class SysCore;
   class SysAudio;
   class SysFont;
   class SysSprite;
+  class SysTextLabel;
   class SysTimer;
 }

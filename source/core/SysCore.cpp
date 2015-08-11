@@ -1,9 +1,9 @@
 
-#include "AppCore.h"
+#include "SysCore.h"
 
 namespace core {
 
-	AppCore::AppCore() {
+	SysCore::SysCore() {
     
 		mainWindow = NULL;
 		mainRenderer = NULL;
@@ -15,14 +15,14 @@ namespace core {
     
 	}
 
-	AppCore::~AppCore() {
+	SysCore::~SysCore() {
     
 		SDL_assert(mainRenderer == NULL);
 		SDL_assert(mainWindow == NULL);
 		
 	}
 
-	int AppCore::startup() {
+	int SysCore::startup() {
     
 		if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
 			printf("error initializing SDL : %s\n", SDL_GetError());
@@ -74,7 +74,7 @@ namespace core {
 		return 0;
 	}
 
-	int AppCore::update() {
+	int SysCore::update() {
     
 		SDL_Event e;
     
@@ -128,7 +128,7 @@ namespace core {
 		return 0;
 	}
 
-	void AppCore::shutdown() {
+	void SysCore::shutdown() {
     
 		// TODO in your own extended object, handle shutdown and cleanup
 		shutdownApp();

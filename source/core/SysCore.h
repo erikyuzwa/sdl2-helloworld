@@ -15,7 +15,7 @@
 */
 namespace core {
 
-	class AppCore {
+	class SysCore {
     
 	protected:
 		/** display width */
@@ -43,12 +43,12 @@ namespace core {
 		/**
 		 * Constructor
 		 */
-		AppCore();
+		SysCore();
     
 		/**
 		 * Destructor
 		 */
-		virtual ~AppCore();
+		virtual ~SysCore();
     
 	public:
 		/** startup and initialize our SDL2 base */

@@ -1,7 +1,7 @@
 
 #include "MyApplication.h"
 
-MyApplication::MyApplication() : AppCore() {
+MyApplication::MyApplication() : SysCore() {
 
 	//TODO handle any constructor initialization here
 
