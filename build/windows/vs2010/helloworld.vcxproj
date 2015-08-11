@@ -96,6 +96,7 @@
     <ClInclude Include="..\..\..\source\app\SysFont.h" />
     <ClInclude Include="..\..\..\source\app\SysSprite.h" />
     <ClInclude Include="..\..\..\source\app\SysTimer.h" />
+    <ClInclude Include="..\..\..\source\MyApplication.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\app\AppCore.cpp" />
@@ -104,6 +105,7 @@
     <ClCompile Include="..\..\..\source\app\SysSprite.cpp" />
     <ClCompile Include="..\..\..\source\app\SysTimer.cpp" />
     <ClCompile Include="..\..\..\source\main.cpp" />
+    <ClCompile Include="..\..\..\source\MyApplication.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

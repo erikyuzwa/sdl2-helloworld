@@ -16,6 +16,7 @@
 		5C18C1291B786D6100DDA028 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C18C1261B786D6100DDA028 /* SDL2_ttf.framework */; };
 		5C3564EF1B766ECC00101008 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3564EE1B766ECC00101008 /* SDL2.framework */; };
 		5C4549021B770CE8008D6587 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C4549011B770CE8008D6587 /* main.cpp */; };
+		5C8CDC221B79B2F200703CC2 /* MyApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C8CDC201B79B2F200703CC2 /* MyApplication.cpp */; };
 		5CDE2FAF1B7711D300A70484 /* AppCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CDE2FAD1B7711D300A70484 /* AppCore.cpp */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,8 @@
 		5C3564EE1B766ECC00101008 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		5C4549011B770CE8008D6587 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../source/main.cpp; sourceTree = "<group>"; };
 		5C4549051B770D23008D6587 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		5C8CDC201B79B2F200703CC2 /* MyApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MyApplication.cpp; path = ../../source/MyApplication.cpp; sourceTree = "<group>"; };
+		5C8CDC211B79B2F200703CC2 /* MyApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyApplication.h; path = ../../source/MyApplication.h; sourceTree = "<group>"; };
 		5CDE2FAD1B7711D300A70484 /* AppCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppCore.cpp; sourceTree = "<group>"; };
 		5CDE2FAE1B7711D300A70484 /* AppCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCore.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +72,8 @@
 		5C3564DB1B766E7900101008 = {
 			isa = PBXGroup;
 			children = (
+				5C8CDC201B79B2F200703CC2 /* MyApplication.cpp */,
+				5C8CDC211B79B2F200703CC2 /* MyApplication.h */,
 				5C18C1241B786D6100DDA028 /* SDL2_image.framework */,
 				5C18C1251B786D6100DDA028 /* SDL2_mixer.framework */,
 				5C18C1261B786D6100DDA028 /* SDL2_ttf.framework */,
@@ -168,6 +173,7 @@
 				5C18C1231B786B6400DDA028 /* SysTimer.cpp in Sources */,
 				5C4549021B770CE8008D6587 /* main.cpp in Sources */,
 				5C18C1221B786B6400DDA028 /* SysSprite.cpp in Sources */,
+				5C8CDC221B79B2F200703CC2 /* MyApplication.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
