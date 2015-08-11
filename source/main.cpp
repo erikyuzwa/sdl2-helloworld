@@ -6,13 +6,12 @@
  * note to devs: Don't update this entry point as much as possible. 
  * Extend from the AppCore and build your game from there.
  */
-#include "AppCore.h"
+#include "MyApplication.h"
 
-using namespace core;
 
 int main(int argc, char** argv){
     
-    AppCore* appCore = new AppCore();
+    MyApplication* appCore = new MyApplication();
     auto returnVal = 0;
     
     returnVal = appCore->startup();
