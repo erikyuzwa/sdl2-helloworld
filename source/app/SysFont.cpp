@@ -2,7 +2,21 @@
 #include "SysFont.h"
 
 namespace core {
-	SysFont::SysFont(){
+
+	SysTextLabel::SysTextLabel(){
+		data = NULL;
+	}
+
+	SysTextLabel::~SysTextLabel(){
+
+		if (data != NULL) {
+			SDL_DestroyTexture(data);
+		}
+		
+		SDL_assert(data == NULL);
+	}
+
+	SysFont::SysFont(SDL_Renderer* value) : renderer(value) {
 
 	}
 
@@ -44,6 +58,10 @@ namespace core {
 		return fontsMap[keyName];
 	}
 
+	void SysFont::setRenderer(SDL_Renderer* value){
+		renderer = value;
+	}
+
 	int SysFont::startup() {
 
 		if( TTF_Init() < 0 ) { 
@@ -63,4 +81,29 @@ namespace core {
 		TTF_Quit();
 
 	}
+
+	SysTextLabel* SysFont::generateTextLabel(string keyName, string keyValue, SDL_Color keyColor){
+
+		SysTextLabel* newLabel = new SysTextLabel();
+
+		//step 1. create a temporary SDL_Surface using our given params
+		SDL_Surface* tempLabel = TTF_RenderText_Solid(getFont(keyName), keyValue.c_str(), keyColor);
+		if (tempLabel == NULL){
+			printf("error creating label %s, using font %s\n", keyValue.c_str(), keyName.c_str());
+			if (newLabel != NULL) {
+				delete newLabel;
+				return NULL;
+			}
+		}
+
+		//step 2. use our SDL_Renderer to properly convert
+		newLabel->data = SDL_CreateTextureFromSurface(renderer, tempLabel);
+
+		//step 3. free our temporary surface
+		SDL_FreeSurface(tempLabel);
+
+		return newLabel;
+
+	}
+
 }
