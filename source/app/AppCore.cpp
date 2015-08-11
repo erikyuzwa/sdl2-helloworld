@@ -19,6 +19,7 @@ namespace core {
     
 		SDL_assert(mainRenderer == NULL);
 		SDL_assert(mainWindow == NULL);
+		
 	}
 
 	int AppCore::startup() {
@@ -50,7 +51,7 @@ namespace core {
 			return -4;
 		}
 
-		mainFont = new SysFont();
+		mainFont = new SysFont(mainRenderer);
 		if(mainFont->startup() < 0){
 			printf( "SysFont could not initialize - no font support for this session");
 			return -5;
@@ -157,6 +158,8 @@ namespace core {
 		
 		// cleanup any remaining SDL core objects
 		SDL_Quit();
+
+		
     
 	}
 

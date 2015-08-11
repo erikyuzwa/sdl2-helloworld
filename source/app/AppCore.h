@@ -48,7 +48,7 @@ namespace core {
 		/**
 		 * Destructor
 		 */
-		~AppCore();
+		virtual ~AppCore();
     
 	public:
 		/** startup and initialize our SDL2 base */
@@ -61,13 +61,13 @@ namespace core {
 		void shutdown();
     
 		/** exposed function for handling your own startup and object creation */
-		virtual int startupApp(){ return 0; }
+		virtual int startupApp() = 0;
     
 		/** exposed function for handling your own update and render loop */
-		virtual void updateApp(Uint32 delta){};
+		virtual void updateApp(Uint32 delta) = 0;
     
 		/** exposed function for handling your own shutdown and cleanup */
-		virtual void shutdownApp(){};
+		virtual void shutdownApp() = 0;
 	};
 
 }
