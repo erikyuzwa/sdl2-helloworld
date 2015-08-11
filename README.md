@@ -8,8 +8,8 @@ cross platform development with SDL2.
 The basic idea to this approach is a project structure that can be opened, edited and
 debugged in the Visual Studio IDE as well as XCode -- without major folder surgery.
 
-You might notice the CMake files within the structure. While not yet complete, I'm
-working to add CMake support to this project as well.
+*You might notice the CMake files within the structure. While not yet complete, I'm
+working to add CMake support to this project as well.*
 
 # WHY?
 Listen, it's hard enough getting a game put together without everyone wasting their precious
@@ -36,17 +36,21 @@ ONCE.
 * build and run from the IDE
 
 ## Developers Guide
-Nothing fancy needed. Pretend I'm also waving my hands while mentioning `DRY principles`. Copy this entire
-project folder structure as your app. As long as your putting everything in a different top-level folder,
-then you'll never need to edit or modify the Visual Studio and XCode IDE project files. 
-`Thank the Maker, this oil bath is going to feel so good.`
+Nothing fancy needed. Pretend I'm also waving my hands while mentioning `DRY principles`. 
+As long as your putting everything in a different top-level folder, then you'll never need to edit or 
+modify the Visual Studio and XCode IDE project files. 
+
+**At least, that's the overall goal**
+
+* Copy entire folder structure underneath a new top-level folder.
+  `mkdir my-app`
+  `cp -a sdl2-helloworld/. my-app/`
+* Create your awesome class definitions in the `source` folder
+* Implement the `MyApplication` object
+* Work with the basic stub entry points to start **YOUR_AWESOME_PROJECT**.
 
 `As I find time and / or hear of interest, I may create small sample projects to demonstrate how this template
 will work. Please reach me at @eyuzwa on the Twitters to voice your support.`
-
-* Create your awesome class definitions in the source folder
-* Implement the `MyApplication` object
-* Work with the basic stub entry points to start YOUR_AWESOME_PROJECT.
 
 ## Acknowledgements and Thanks
 * the entire SDL2 community that tirelessly works on preserving / extending SDL2
