@@ -49,6 +49,9 @@ modify the Visual Studio and XCode IDE project files.
 * Implement the `MyApplication` object
 * Work with the basic stub entry points to start **YOUR_AWESOME_PROJECT**.
 
+## Demo Project
+A demo project has been created over in my <a href="https://github.com/erikyuzwa/sdl2-helloworld-demo1" target="_blank">sdl2-helloworld-demo1</a> repo for your enjoyment
+
 `As I find time and / or hear of interest, I may create small sample projects to demonstrate how this template
 will work. Please reach me at @eyuzwa on the Twitters to voice your support.`
 
