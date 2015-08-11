@@ -44,9 +44,9 @@ then you'll never need to edit or modify the Visual Studio and XCode IDE project
 `As I find time and / or hear of interest, I may create small sample projects to demonstrate how this template
 will work. Please reach me at @eyuzwa on the Twitters to voice your support.`
 
-* Create your awesome class definitions in the source/app folder
-* At the very least, extend the `core::AppCore` object
-* Provide overrides for the `core::AppCore::startupApp()`, `core::AppCore::updateApp()` and `core::AppCore::shutdownApp()` functions
+* Create your awesome class definitions in the source folder
+* Implement the `MyApplication` object
+* Work with the basic stub entry points to start YOUR_AWESOME_PROJECT.
 
 ## Acknowledgements and Thanks
 * the entire SDL2 community that tirelessly works on preserving / extending SDL2
@@ -55,6 +55,7 @@ will work. Please reach me at @eyuzwa on the Twitters to voice your support.`
 * Sir Dupre for sacrificing himself and allowing his ashes to be fused with the Chaos Serpent.
 
 ## Version History
+* 0.3.2 updated with MyApplication object use for developers
 * 0.3.1 updated with SysTimer object
 * 0.3.0 updated with SysAudio, SysFont, SysSprite objects
 * 0.2.0 added support for VS2010
