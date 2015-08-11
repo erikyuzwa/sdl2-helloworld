@@ -1,7 +1,7 @@
 
 #pragma once 
 
-#include "stdafx.h"
+#include "SysHeaders.h"
 
 using namespace std;
 

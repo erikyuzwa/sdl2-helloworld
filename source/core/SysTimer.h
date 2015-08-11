@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include "stdafx.h"
+#include "SysHeaders.h"
 
 /**
 * This is a core object for acting as a timer for use in animations, events, etc.

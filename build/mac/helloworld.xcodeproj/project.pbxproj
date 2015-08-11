@@ -39,7 +39,7 @@
 		5C3564E41B766E7900101008 /* helloworld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = helloworld; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C3564EE1B766ECC00101008 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		5C4549011B770CE8008D6587 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../source/main.cpp; sourceTree = "<group>"; };
-		5C8C7ABA1B79B4BF006FE61D /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		5C8C7ABA1B79B4BF006FE61D /* SysHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysHeaders.h; sourceTree = "<group>"; };
 		5C8C7ABB1B79B4BF006FE61D /* SysAudio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SysAudio.cpp; sourceTree = "<group>"; };
 		5C8C7ABC1B79B4BF006FE61D /* SysAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysAudio.h; sourceTree = "<group>"; };
 		5C8C7ABD1B79B4BF006FE61D /* SysCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SysCore.cpp; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		5C8C7AB81B79B4BF006FE61D /* core */ = {
 			isa = PBXGroup;
 			children = (
-				5C8C7ABA1B79B4BF006FE61D /* stdafx.h */,
+				5C8C7ABA1B79B4BF006FE61D /* SysHeaders.h */,
 				5C8C7ABB1B79B4BF006FE61D /* SysAudio.cpp */,
 				5C8C7ABC1B79B4BF006FE61D /* SysAudio.h */,
 				5C8C7ABD1B79B4BF006FE61D /* SysCore.cpp */,
