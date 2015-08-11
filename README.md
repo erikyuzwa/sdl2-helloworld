@@ -59,6 +59,7 @@ will work. Please reach me at @eyuzwa on the Twitters to voice your support.`
 * Sir Dupre for sacrificing himself and allowing his ashes to be fused with the Chaos Serpent.
 
 ## Version History
+* 0.4.0 refactored app into core, and core::AppCore into core::SysCore
 * 0.3.2 updated with MyApplication object use for developers
 * 0.3.1 updated with SysTimer object
 * 0.3.0 updated with SysAudio, SysFont, SysSprite objects
