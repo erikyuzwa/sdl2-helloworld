@@ -26,6 +26,9 @@ public:
 	/** exposed function for handling your own startup and object creation */
 	virtual int startupApp();
 
+	/** exposed function for handling keyboard input events */
+	virtual int handleInputKeys(SDL_Event* keyboardEvent);
+
 	/** exposed function for handling your own update and render loop */
 	virtual void updateApp(Uint32 delta);
 

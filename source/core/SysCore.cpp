@@ -99,6 +99,12 @@ namespace core {
 						done = true;
 					}
 				}
+
+				if (e.type == SDL_KEYDOWN || e.type == SDL_KEYUP){
+					if (handleInputKeys(&e) < 0){
+						done = true;
+					}
+				}
 			}
 
 			// update our fps calculation

@@ -19,6 +19,12 @@ int MyApplication::startupApp() {
 	return 0;
 }
 
+int MyApplication::handleInputKeys(SDL_Event* keyboardEvent){
+
+    //TODO handle any keyboard event keys - return -1 to also quit
+	return 0;
+}
+
 void MyApplication::updateApp(Uint32 delta) {
 
 	//TODO update our game world and render it
